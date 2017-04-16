@@ -4,16 +4,20 @@ node_js:
   - 'stable'
   - '7'
   - '6'
+# unfortunately, `npm install` will run the redious build script here
 script:
   - 'npm run build'
   - 'npm test'
 after_script:
   - ls -lh index.json
+before_deploy:
+  - rm .gitignore # see https://docs.travis-ci.com/user/deployment/npm/#Note-on-.gitignore
+  - npm version --no-git-tag-version --force minor
 deploy:
   provider: npm
   on:
     branch: master
-    node: latest
+    node: stable
   email: 'mail@jannisr.de'
   api_key: ${NPM_KEY}
   skip_cleanup: true
