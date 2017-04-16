@@ -7,3 +7,13 @@ node_js:
 script:
   - 'npm run build'
   - 'npm test'
+after_script:
+  - ls -lh index.json
+deploy:
+  provider: npm
+  on:
+    branch: master
+    node: latest
+  email: 'mail@jannisr.de'
+  api_key: ${NPM_KEY}
+  skip_cleanup: true
