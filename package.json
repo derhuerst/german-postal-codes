@@ -1,0 +1,25 @@
+{
+	"name":         "german-postal-codes",
+	"description":  "A list of all postal (ZIP) codes in Germany.",
+	"version":      "0.1.0",
+	"main":         "index.js",
+	"files":        ["index.js"],
+	"keywords":     ["germany", "postal code", "zip code", "plz", "postleitzahl"],
+	"author":       "Jannis R <mail@jannisr.de>",
+	"homepage":     "https://github.com/derhuerst/german-postal-codes",
+	"repository":   "derhuerst/german-postal-codes",
+	"bugs":         "https://github.com/derhuerst/german-postal-codes/issues",
+	"license":      "ISC",
+	"engines":      {"node": ">=6"},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"tape": "^4.6.3",
+		"tap-min": "^1.2.1"
+	},
+	"scripts": {
+		"build": "node build.js",
+		"test": "node test.js | tap-min",
+		"prepublish": "npm run build && npm test"
+	}
+}
