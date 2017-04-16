@@ -18,7 +18,24 @@ npm install german-postal-codes
 ## Usage
 
 ```js
-todo
+const codes = require('german-postal-codes')
+
+console.log(codes)
+```
+
+```js
+[
+	'01067',
+	'01069',
+	'01097',
+	'01099',
+	'01108',
+	// …
+	'99991',
+	'99994',
+	'99996',
+	'99998'
+]
 ```
 
 

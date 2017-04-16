@@ -17,7 +17,7 @@ const fetchPostalCodes = (prefix) => {
 
 
 const queue = Queue({
-	concurrency: 4,
+	concurrency: 8,
 	timeout: 60 * 1000,
 	autostart: true
 })
@@ -38,6 +38,7 @@ for (let i = 0; i <= 999; i++) {
 			fetchPostalCodes(prefix)
 			.then((newCodes) => {
 				codes = codes.concat(newCodes)
+				process.stderr.write(prefix + '* ✓\n')
 				cb()
 			})
 			.catch(cb)
