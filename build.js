@@ -3,6 +3,7 @@
 const {postalCodeShapes} = require('deutsche-post')
 const Queue = require('queue')
 const uniq = require('lodash.uniq')
+const exceptions = require('./exceptions')
 
 const showError = (err) => {
 	console.error(err)
@@ -21,7 +22,7 @@ const queue = Queue({
 	timeout: 60 * 1000,
 	autostart: true
 })
-let codes = []
+let codes = Array.from(exceptions)
 
 queue
 .on('error', showError)
