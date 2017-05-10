@@ -14,7 +14,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"deutsche-post": "derhuerst/deutsche-post",
+		"deutsche-post": "juliuste/deutsche-post",
 		"lodash.uniq": "^4.5.0",
 		"queue": "^4.2.1",
 		"tape": "^4.6.3",
@@ -23,6 +23,6 @@
 	"scripts": {
 		"build": "node build.js > index.json",
 		"test": "node test.js | tap-min",
-		"prepublish": "npm run build && npm test"
+		"prepublishOnly": "npm run build && npm test"
 	}
 }
