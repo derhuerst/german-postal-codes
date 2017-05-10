@@ -3,6 +3,7 @@
 module.exports = [
 	// see https://de.wikipedia.org/wiki/Postleitzahl_%28Deutschland%29#Postleitzahlenarten
 	'01001', // Stadtverwaltung Dresden
+	'01062', // Technische Universität Dresden
 	'09107', // Technische Universität Chemnitz
 	'11011', // Deutscher Bundestag in Berlin
 	'44128', // Stiftung für Hochschulzulassung in Dortmund
