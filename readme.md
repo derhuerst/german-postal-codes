@@ -1,5 +1,7 @@
 # german-postal-codes
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derhuerst/german-postal-codes.svg)](https://greenkeeper.io/)
+
 **A list of all [postal (ZIP) codes in Germany](https://en.wikipedia.org/wiki/Postal_codes_in_Germany).**
 
 [![npm version](https://img.shields.io/npm/v/german-postal-codes.svg)](https://www.npmjs.com/package/german-postal-codes)
