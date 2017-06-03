@@ -11,8 +11,8 @@ script:
 after_script:
   - ls -lh index.json
 before_deploy:
-  - rm .gitignore # see https://docs.travis-ci.com/user/deployment/npm/#Note-on-.gitignore
-  - npm version --no-git-tag-version --force minor
+  - npm i semver
+  - npm version --no-git-tag-version --force $(./node_modules/.bin/semver -i minor $(npm info vbb-graph version))
 deploy:
   provider: npm
   on:
