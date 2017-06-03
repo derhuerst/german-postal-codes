@@ -12,7 +12,7 @@ after_script:
   - ls -lh index.json
 before_deploy:
   - npm i semver
-  - npm version --no-git-tag-version --force $(./node_modules/.bin/semver -i minor $(npm info vbb-graph version))
+  - npm version --no-git-tag-version --force $(./node_modules/.bin/semver -i minor $(npm info german-postal-codes version))
 deploy:
   provider: npm
   on:
