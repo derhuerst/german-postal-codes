@@ -14,7 +14,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"deutsche-post": "^0.1.0",
+		"deutsche-post": "^0.2.0",
 		"lodash.uniq": "^4.5.0",
 		"queue": "^4.2.1",
 		"tape": "^4.6.3",
