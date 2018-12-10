@@ -2,7 +2,6 @@ sudo: false
 language: node_js
 node_js:
   - 'stable'
-# unfortunately, `npm install` will run the redious build script here
 script:
   - 'npm run build'
   - 'npm test'
