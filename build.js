@@ -18,7 +18,7 @@ const fetchPostalCodes = (prefix) => {
 
 
 const queue = Queue({
-	concurrency: 8,
+	concurrency: 4,
 	timeout: 60 * 1000,
 	autostart: true
 })

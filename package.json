@@ -1,7 +1,7 @@
 {
 	"name":         "german-postal-codes",
 	"description":  "A list of all postal (ZIP) codes in Germany.",
-	"version": "1.0.0",
+	"version": "1.32.0",
 	"main":         "index.json",
 	"files":        ["index.json", "exceptions.js"],
 	"keywords":     ["germany", "postal code", "zip code", "plz", "postleitzahl"],
