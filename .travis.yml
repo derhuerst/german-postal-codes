@@ -3,6 +3,7 @@ node_js:
   - 'stable'
   - '8'
 script:
+  - 'npm run lint'
   - 'npm run build'
   - 'npm test'
 after_script:
